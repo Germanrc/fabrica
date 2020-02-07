@@ -18,7 +18,7 @@ public class Pedido
         //p2 = new Producto();
         //p3 = new Producto();
     }
-    
+    /*
     Producto getP1()
     {
         return p1;
@@ -32,7 +32,7 @@ public class Pedido
     Producto getP3()
     {
         return p3;
-    }
+    }*/
     
     public void pedirProducto(int num_p)
     {
