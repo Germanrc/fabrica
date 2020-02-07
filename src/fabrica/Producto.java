@@ -6,6 +6,7 @@ public class Producto
     private String nombre;
     private int serie;
     private double precio;
+    private double precio_iva;
     
     Producto()
     {
@@ -34,6 +35,22 @@ public class Producto
     public double getPrecio()
     {
         return precio;
+    }
+    
+    public void setPrecioIva()
+    {
+        precio_iva = precio * 1.21;
+    }
+    
+    public double getPrecioIva()
+    {
+        return precio_iva;
+    }
+    
+    public double getPrecioUnidades(int n)
+    {
+        if(n > 0) return n * precio;
+        else return -1;
     }
     
     private static int generar()
