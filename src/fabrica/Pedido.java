@@ -3,15 +3,20 @@ import java.util.*;
 
 public class Pedido 
 {
-    private Producto p1;
-    private Producto p2;
-    private Producto p3;
+    //private Producto p1;
+    //private Producto p2;
+    //private Producto p3;
+    private Producto productos[];
     
     Pedido()
     {
-        p1 = new Producto();
-        p2 = new Producto();
-        p3 = new Producto();
+        productos=new Producto[3];
+        for(int i=0;i<productos.length;i++){
+            productos[i]=new Producto();
+        }
+        //p1 = new Producto();
+        //p2 = new Producto();
+        //p3 = new Producto();
     }
     
     Producto getP1()
