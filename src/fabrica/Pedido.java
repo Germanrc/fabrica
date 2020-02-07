@@ -75,9 +75,11 @@ public class Pedido
     
     public void mostrarPedido()
     {
-        p1.resumen();
-        p2.resumen();
-        p3.resumen();
-        System.out.println(total() );
+        for(int i=0;i<productos.length;i++){
+            productos[i].resumen();
+        }
+        
+        
+        System.out.println(total());
     }
 }
