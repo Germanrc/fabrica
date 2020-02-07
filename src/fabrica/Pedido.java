@@ -70,7 +70,7 @@ public class Pedido
     
     public double total()
     {
-        return p1.getPrecio() + p2.getPrecio() + p3.getPrecio();
+        return productos[1].getPrecio() + productos[2].getPrecio() + productos[3].getPrecio();
     }
     
     public void mostrarPedido()
