@@ -7,7 +7,7 @@ public class Main
         Pedido pedido = new Pedido();
         pedido.pedirProducto();
         
-        //if(pedido.getP1().iguales(pedido.getP2() ) && pedido.getP1().iguales(pedido.getP3() ) );
+        if(pedido.getProducto(0).iguales(pedido.getProducto(1) ) && pedido.getProducto(1).iguales(pedido.getProducto(2)) );
         pedido.mostrarPedido();
     }
 }
