@@ -18,6 +18,10 @@ public class Pedido
         //p2 = new Producto();
         //p3 = new Producto();
     }
+    
+    public Producto getProducto(int numProducto){
+        return productos[numProducto];
+    }
     /*
     Producto getP1()
     {
@@ -36,8 +40,15 @@ public class Pedido
     
     public void pedirProducto(int num_p)
     {
+        
+        
         Scanner scan = new Scanner(System.in);
-        switch(num_p)
+        
+        for(int i=0;i<productos.length;i++){
+            productos[i].setNombre(Producto.pedirNombre());
+            productos[i].setPrecio(Producto.pedirPrecio());
+        }
+        /*switch(num_p)
         {
             case 1:
                 p1.setNombre(Producto.pedirNombre());
@@ -54,7 +65,7 @@ public class Pedido
             default:
                 System.out.println("Número inválido");
                 break;
-        }
+        }*/
     }
     
     public double total()
