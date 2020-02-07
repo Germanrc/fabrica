@@ -38,7 +38,7 @@ public class Pedido
         return p3;
     }*/
     
-    public void pedirProducto(int num_p)
+    public void pedirProducto()
     {
         
         
